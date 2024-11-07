@@ -1,0 +1,403 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+header {
+    background: #0d47a1;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 1.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #81d4fa;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .cta-button {
+    background: #0d47a1;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #1565c0;
+}
+
+/* Models Section */
+.models {
+    padding: 4rem 2rem;
+    background-color: #212121;
+    text-align: center;
+}
+
+.models h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #81d4fa;
+}
+
+.model-card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    width: 280px;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+}
+
+.model-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.model-card h3 {
+    color: #81d4fa;
+    margin: 0.5rem 0;
+}
+
+.model-card p {
+    color: #ccc;
+}
+
+.model-card .learn-more {
+    display: inline-block;
+    color: #fff;
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.model-card .learn-more:hover {
+    color: #81d4fa;
+}
+
+/* Technology Section */
+.technology {
+    padding: 4rem 2rem;
+    background: #1a237e;
+    color: #d3cccc;
+    text-align: center;
+}
+
+.technology h2 {
+    color: #81d4fa;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.technology p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.technology ul {
+    list-style: none;
+    padding: 0;
+}
+
+.technology ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #0d47a1;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #81d4fa;
+    margin-bottom: 1.5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #1565c0;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #1e88e5;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #0d47a1;
+    color: #c5cae9;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer ul li a {
+    color: #81d4fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .models, .technology, .contact {
+        padding: 2rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    header ul.active {
+        display: flex;
+    }
+}
+.car-models {
+    padding: 4rem 2rem;
+    background-color: #212121;
+    text-align: center;
+}
+
+.car-models h2 {
+    color: #81d4fa;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.model-section {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    transition: transform 0.3s;
+}
+
+.model-section:hover {
+    transform: scale(1.02);
+}
+
+.model-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.model-section h2 {
+    color: #81d4fa;
+    text-align: center;
+}
+.model-section h3 {
+    color: #81d4fa;
+    margin-bottom: 0.5rem;
+}
+
+.model-section p {
+    color: #ccc;
+    margin: 0.5rem 0;
+}
+
+.model-section h4 {
+    color: #81d4fa;
+    margin-top: 1rem;
+}
+
+.model-section ul {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+
+.model-section ul li {
+    margin: 0.5rem 0;
+}
+.content h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.content ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #555;
+}
+
+.content p, .content ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+a {
+    color: #81d4fa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+}
+
+header nav h1 {
+    color: #81d4fa;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+.white-text {
+    color: white;
+}
